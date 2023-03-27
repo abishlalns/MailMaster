@@ -1,0 +1,338 @@
+* {
+  box-sizing: border-box;
+  padding: 0%;
+  margin: 0px;
+}
+.body {
+  padding: 10px 10px 0px;
+  background-color: #d1d1d3;
+}
+body{
+  overflow:hidden;
+}
+body::-webkit-scrollbar {
+  display: none;
+}
+.topSection {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  background-color: #08158a;
+  border-radius: 10px;
+  padding: 10px 30px;
+}
+.topSection .logo img {
+  width: 50px;
+}
+.topSection .search {
+  display: flex;
+  margin-left: 60px;
+  width: 70%;
+  position: relative;
+}
+
+.topSection .search img {
+  width: 35px;
+  cursor: pointer;
+  position: absolute;
+  left: 5px;
+  top: 5px;
+  background: none;
+}
+.topSection .search a:hover ~ input,
+.topSection .search a:focus ~ input {
+  width: 100%;
+  padding: 5px 5px 5px 40px;
+}
+.topSection .search input:valid,
+.topSection .search input:focus {
+  width: 100%;
+  padding: 5px 5px 5px 40px;
+}
+.topSection .search input {
+  background: white;
+  width: 0px;
+  border: none;
+  transition: 0.5s;
+  font-size: 18px;
+  letter-spacing: 0.1em;
+  outline: none;
+  height: 40px;
+  border-radius: 20px;
+}
+.endIcons {
+  width: 100%;
+  list-style: none;
+  display: flex;
+  justify-content: flex-end;
+}
+.endIcons li {
+  padding-left: 30px;
+  cursor: pointer;
+}
+.endIcons li img {
+  width: 30px;
+}
+
+/* body section  */
+.bodySection {
+  display: grid;
+  grid-template-columns: 20% 80%;
+}
+.bodySection .leftSection {
+  background-color: #08158a;
+  padding: 30px 20px 0px;
+  border-radius: 10px 10px 0px 0px;
+  margin-top: 7px;
+  height: 90vh;
+}
+.leftSection .compose {
+  display: flex;
+  background-color: #ffff;
+  padding: 8px 15px;
+  border-radius: 50px;
+  cursor: pointer;
+  justify-content: center;
+}
+.compose h1{
+  font-size: 20px;
+}
+.compose img {
+  width: 20px;
+}
+.leftSection .mailLinks {
+  margin-top: 30px;
+}
+
+.leftSection .mailLinks li {
+  display: flex;
+  padding-left: 5px;
+  cursor: pointer;
+  color: #ffff;
+}
+.mailLinks .active{
+  border: 2px solid #8f3ebe;
+  background-color: #d8b8eb;
+}
+.mailLinks .active p{
+  color: #000;
+
+}
+.leftSection li p {
+  font-size: 18px;
+  padding: 10px;
+}
+.mailLinks li img {
+  width: 25px;
+}
+
+.bodySection .rightSection {
+  margin: 20px 0px 0px 20px;
+  height: 100vh;
+  overflow-y: scroll;
+  padding-bottom: 100px;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+}
+.bodySection .rightSection .title{
+  margin-bottom: 20px;
+}
+.rightSection .iconLinks {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  border-bottom: 1px solid #c9bbbb;
+  position: relative;
+}
+.rightSection .iconLinks h1 {
+  font-size: 22px;
+  position: absolute;
+  left: 15px;
+  top: 5px;
+  cursor: pointer;
+}
+.rightSection .iconLinks a {
+  padding: 5px 20px;
+  list-style: none;
+  cursor: pointer;
+}
+.rightSection .iconLinks img {
+  width: 22px;
+}
+.rightSection::-webkit-scrollbar {
+  display: none;
+}
+.message {
+  padding: 15px;
+  width: 100%;
+  margin: 0px 0px 20px;
+  cursor: pointer;
+}
+.messageRead {
+  background-color: #ffff;
+}
+.messageUnRead {
+  background-color: #b4b3a2;
+}
+.userMail {
+  display: flex;
+  align-items: end;
+  width: 100%;
+  position: relative;
+}
+.userMail h3 {
+  color: #648b64;
+}
+
+.userMail .time {
+  position: absolute;
+  right: 35px;
+}
+.message .mailBody {
+  display: flex;
+  padding: 15px 0px;
+  align-items: center;
+}
+
+.mailBody .mailMessage {
+  padding-left: 5px;
+  white-space: nowrap; 
+  height: 30px;
+  overflow: hidden;
+  text-overflow: ellipsis; 
+}
+
+/* message body  */
+
+.readMessages .readMessage .title {
+  font-size: 25px;
+  background-color: #ffff;
+  padding: 10px 15px;
+  margin-bottom: 8px;
+}
+.mailDetails {
+  background-color: #ffff;
+  padding: 15px;
+  /* height: 40vh; */
+}
+.mailInfo .recieverMail {
+  display: flex;
+  align-items: center;
+  position: relative;
+  padding-bottom: 20px;
+}
+.mailInfo h1 {
+  font-size: 22px;
+  padding-bottom: 10px;
+}
+.mailInfo .recieverMail h2 {
+  font-size: 18px;
+  font-weight: 600;
+  color: #425542;
+}
+.mailInfo .recieverMail .time {
+  position: absolute;
+  right: 20px;
+  font-size: 18px;
+  font-weight: 500;
+  color: #425542;
+}
+.receiver {
+  font-size: 14px;
+  padding-top: 8px;
+  color: #425542;
+}
+/* new mail styles */
+.newMailDetails {
+  background-color: none;
+  height: 85vh;
+  padding: 15px;
+}
+.newMailInfo {
+  width: 100%;
+}
+.fromUser,
+.toUser {
+  padding: 10px;
+}
+.fromUser label,
+.toUser label {
+  font-size: 20px;
+  padding: 5px;
+}
+.toUser label {
+  padding-right: 30px;
+}
+.fromUser input,
+.toUser input {
+  height: 25px;
+  font-size: 15px;
+  padding: 5px;
+  letter-spacing: 0.5px;
+  width: 60%;
+  border: none;
+  outline: none;
+}
+.header {
+  padding: 20px;
+}
+.header input {
+  height: 25px;
+  font-size: 15px;
+  padding: 5px;
+  letter-spacing: 0.5px;
+  width: 100%;
+  border: none;
+  outline: none;
+}
+
+textarea {
+  margin: 0px 20px;
+  width: 96%;
+  border: none;
+  outline: none;
+  padding: 10px;
+}
+.sendButton {
+  float: right;
+  background-color: blue;
+  color: #ffff;
+  padding: 5px 25px;
+  font-size: 20px;
+  border: none;
+  border-radius: 20px;
+  margin: 15px;
+  cursor: pointer;
+}
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  .bodySection {
+    grid-template-columns: 40% 60%;
+  }
+  .compose h1 {
+    font-size: 20px;
+  }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+  .bodySection {
+    grid-template-columns: 40% 60%;
+  }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+  .bodySection {
+    grid-template-columns: 30% 70%;
+  }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+  .bodySection {
+    grid-template-columns: 20% 80%;
+  }
+}

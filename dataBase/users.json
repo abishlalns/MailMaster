@@ -1,0 +1,22 @@
+{
+    "priya@mastermail.com": {
+        "user": "priya",
+        "email": "priya@mastermail.com",
+        "password": "12"
+    },
+    "manisha@mastermail.com": {
+        "user": "manisha",
+        "email": "manisha@mastermail.com",
+        "password": "123456"
+    },
+    "annie@mastermail.com": {
+        "user": "Annie",
+        "email": "annie@mastermail.com",
+        "password": "123"
+    },
+    "annieee@mastermail.com": {
+        "user": "Annnie",
+        "email": "annieee@mastermail.com",
+        "password": "123"
+    }
+}

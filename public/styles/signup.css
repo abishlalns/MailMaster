@@ -1,0 +1,134 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans:wght@700&family=Poppins:wght@400;500;600&display=swap");
+* {
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+  font-family: "Poppins", sans-serif;
+}
+body {
+  background-color: rgb(114, 114, 240);
+}
+
+.body {
+  display: grid;
+  grid-template-columns: 50% 50%;
+}
+.leftColumn {
+  width: 100%;
+}
+.leftColumn img {
+  width: 100%;
+}
+.rightColumn {
+  color: white;
+  background-color: rgb(114, 114, 240);
+  padding:30px;
+  display: flex;
+}
+.rightColumn .rightColumItems {
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  align-items: center;
+}
+.rightColumn .signupHeader h1 {
+  padding-top: 50px;
+  text-align: center;
+}
+.rightColumn .signupHeader p {
+  padding: 10px 0px;
+}
+.defaultEmail{
+  position: relative;
+}
+.defaultEmail p{
+  top: -5px;
+  right: 0px;
+  position: absolute;
+  padding: 5px;
+  background-color: #6055e2;
+}
+
+.signupForm .form {
+  display: flex;
+  flex-direction: column;
+  margin: 20px 0px 0px;
+}
+.signupForm .form input {
+  height: 35px;
+  background: transparent;
+  border: none;
+  outline: none;
+  color: #ffff;
+  font-size: 20px;
+  letter-spacing: 0.05em;
+}
+.signupForm .form li {
+  margin-bottom: 20px;
+  margin-top: -5px;
+  list-style: none;
+  border-top: 1px solid #ffff;
+}
+.signupForm .form button {
+  font-size: 20px;
+  padding: 8px;
+  cursor: pointer;
+  background-color: #ffff;
+  border: none;
+  color: #211775;
+  letter-spacing: 0.5px;
+}
+
+.links p {
+  padding-top: 5px;
+}
+.links p a {
+  color: #c9c8cf;
+  text-decoration: none;
+}
+
+.errorMessage {
+  margin-top: 5px;
+  background-color: #d11d1d;
+  text-align: center;
+  color: #ffff;
+  visibility: hidden;
+}
+.error {
+  font-size: 20px;
+  padding: 5px;
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  .body {
+    grid-template-columns: 100%;
+  }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+  .body {
+    grid-template-columns: 100%;
+  }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+  .body {
+    grid-template-columns: 40% 60%;
+  }
+  .rightColumn {
+    padding: 0px;
+  }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+  .body {
+    grid-template-columns: 50% 50%;
+  }
+  .rightColumn {
+    padding: 30px;
+  }
+}

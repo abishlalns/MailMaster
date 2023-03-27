@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles/signup.css" />
+    <title>Sign Up</title>
+  </head>
+  <body>
+    <div class="body">
+      <div class="leftColumn">
+        <img src="./assets/signup.jpg" alt="signup" />
+      </div>
+      <div class="rightColumn">
+        <div class="rightColumItems">
+          <div class="signupHeader">
+            <h1>Welcome to Let's Chat</h1>
+            <p>
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nesciunt
+              magnam temporibus perspiciatis cum nostrum repudiandae soluta
+              vitae ratione id, sunt at officiis cupiditate. Facere quas autem
+              laboriosam. Dolores, accusamus eaque!
+            </p>
+          </div>
+          <div class="signupForm">
+            <form class="form" onsubmit="return onSubmit()">
+              <label for="username">User Name</label>
+              <input type="text" id="username" required />
+              <li></li>
+              <label for="email">Email</label>
+              <div class="defaultEmail">
+                <p>@mastermail.com</p>
+              </div>
+              <input type="text" id="email" required />
+              <li></li>
+              <label for="password">Password</label>
+              <input type="password" id="password" required />
+              <li></li>
+              <button type="submit" id="submit">Signup</button>
+            </form>
+            <div class="errorMessage">
+              <h1 class="error"></h1>
+            </div>
+            <div class="links">
+              <p>Already have account? <a href="login.html">Login</a></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="./scripts/signup.js"></script>
+  </body>
+</html>

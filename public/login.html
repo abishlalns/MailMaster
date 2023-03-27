@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="./styles/login.css" />
+  <title>Login</title>
+</head>
+
+<body>
+  <div class="body">
+    <h1>Login</h1>
+    <form id="loginForm" onsubmit="return logIn()">
+      <div class="inputField">
+        <input type="email" required id="email" placeholder=" " />
+        <span></span>
+        <label for="email">Email</label>
+      </div>
+      <div class="inputField">
+        <input type="password" name="password" id="password" required placeholder=" "
+          />
+          <span></span>
+          <label for=" password">Password</label>
+      </div>
+      <button type="submit">Login</button>
+      <div class="errorMessage">
+        <h1 class="error"></h1>
+      </div>
+      <div class="link">
+        Not already a member? <a href="signup.html">Signup</a>
+      </div>
+    </form>
+  </div>
+  <script src="./scripts/login.js"></script>
+</body>
+
+</html>

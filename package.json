@@ -1,0 +1,27 @@
+{
+  "type": "module",
+  "name": "mailmaster",
+  "version": "1.0.0",
+  "description": "This README would normally document whatever steps are necessary to get your application up and running.",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon server/server.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://abishlal@bitbucket.org/soliton-practices/mailmaster.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://bitbucket.org/soliton-practices/mailmaster/issues"
+  },
+  "homepage": "https://bitbucket.org/soliton-practices/mailmaster#readme",
+  "dependencies": {
+    "express": "^4.18.2",
+    "moment": "^2.29.4",
+    "nodemon": "^2.0.21"
+  }
+}
